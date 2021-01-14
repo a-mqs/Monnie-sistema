@@ -18,7 +18,7 @@ const vendaComZeros = idVenda => zeroPad(idVenda, 4)
 function idFormat(idVenda){
     return diaAgora_DoisDigitos() 
     + mesAgora_ComeçandoPor1_DoisDigitos() 
-    + new Date().getFullYear() 
+    + new Date().getFullYear().toString().substr(-2) 
     + vendaComZeros(idVenda)
 }
 
