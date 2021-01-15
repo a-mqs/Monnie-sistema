@@ -17,11 +17,10 @@ function salvarPedido(pedido){
     return pedido
 }
 
-//TODO: fazer o pedido retornar pelo id formatado (dica: pedidos não é iteravel)
 function getPedido(id){
-    return pedidos.id || {}
-    
+    return Object.values(pedidos).filter(item => item.id == id)
 }
+
 
 function getPedidos(){
     return Object.values(pedidos)

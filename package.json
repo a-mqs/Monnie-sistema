@@ -1,7 +1,7 @@
 {
-  "name": "monnie-sistema",
+  "name": "monnies-sistema",
   "version": "1.0.0",
-  "description": "Sistema da sorveteria ficticia Monnie",
+  "description": "Sistema da sorveteria ficticia Monnies",
   "main": "src/servidor.js",
   "scripts": {
     "start": "nodemon",

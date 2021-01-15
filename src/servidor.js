@@ -25,9 +25,9 @@ app.post('/pedidos', (req, res) => {
 
 app.put('/pedidos/:id', (req, res) => {
     const pedido = bancoDeDados.salvarPedido({
-        id: req.body.id,
-        tipoSorvete: req.body.tipoSorvete,
-        saborSorvete: req.body.saborSorvete
+        tipo: req.body.tipo,
+        sabor: req.body.sabor,
+        id: req.params.id
     })
     res.send(pedido)
 })
